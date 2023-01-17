@@ -1,0 +1,27 @@
+.App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.card{
+    border: 1px solid black;
+
+}
+.decor{
+    font-weight: bold;
+}
+.simpsonsImg{
+    width: 200px;
+    height: 300px;
+}
+
+.simpsons{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+}
+
+.rick_and_morty{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+}
