@@ -1,24 +1,15 @@
 .App {
-    text-align: center;
     display: flex;
     flex-direction: column;
 
-}
-.card{
-    border: 1px solid black;
+
 
 }
-.decor{
-    font-weight: bold;
-}
-.simpsonsImg{
-    width: 200px;
-    height: 300px;
-}
 
-.simpsons{
+.simpsons_place{
     display: grid;
-    grid-template-columns:repeat(2, 1fr) ;
+    grid-template-columns:1fr 1fr ;
+
 }
 
 .rick_and_morty{

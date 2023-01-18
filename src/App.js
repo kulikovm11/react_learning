@@ -1,19 +1,16 @@
 import React from 'react';
 import {Simpsons} from "./components/Simpsons/Simpsons";
 import './App.css'
+import {Characters} from "./components/Characters/Characters";
 
 
 const App = () => {
     return (
         <div className='App'>
-            <div className="simpsons">
+
                 <Simpsons/>
-            </div>
-            <div className="rick_and_morty">
 
-            </div>
-
-
+                <Characters/>
 
         </div>
     );

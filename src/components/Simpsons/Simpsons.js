@@ -41,7 +41,7 @@ const Simpsons = () => {
         },
     ]
     return (
-        <div>
+        <div className="simpsons_place">
             {
                 simpsons.map(simpson => <Simpson key={simpson.id} simpson={simpson}/>)
             }
