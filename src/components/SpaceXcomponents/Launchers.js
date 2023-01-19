@@ -19,7 +19,7 @@ const Launchers = () => {
     return (
         <div>
             {
-                launchers.filter(launch => launch.date_utc !== '2020').map(launch => <Launch key={launch.id} launch={launch}/>)
+                launchers.filter(launch => launch.launch_year !== '2020').map(launch => <Launch key={launch.id} launch={launch}/>)
             }
 
         </div>

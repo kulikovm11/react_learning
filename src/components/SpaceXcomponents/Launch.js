@@ -1,22 +1,22 @@
 import React from 'react';
 
 const Launch = ({launch}) => {
-    const{name,date_utc,links:{patch:{small}}} = launch
+    const{mission_name,launch_year,links:{mission_patch_small}} = launch
 
 
-    if(date_utc !== '2020'){
+
 
         return (
             <div className='spaceX_card'>
-                <h2>{name}</h2>
-                <p>Date: {date_utc}</p>
-                <img src={small} alt={name}/>
+                <h2>{mission_name}</h2>
+                <p>Date: {launch_year}</p>
+                <img src={mission_patch_small} alt={mission_name}/>
 
 
             </div>
         );
 
-    }
+
 
 };
 
