@@ -1,6 +1,8 @@
 import React from 'react';
 
-const Car = ({car}) => {
+import {carService} from "../../services";
+
+const Car = ({car, setUpdateCar}) => {
     const {id, brand, price, year} = car
     return (
         <div style={{borderBottom:'1px solid blue'}}>
@@ -8,6 +10,8 @@ const Car = ({car}) => {
             <h2>{brand}</h2>
             <p>Price: {price}</p>
             <p>Year: {year}</p>
+            <button style={{background:'green'}} onClick={()=>setUpdateCar(car)}>Update</button>
+            <button style={{background:'tomato'}} onClick={()=>carService.deleteById(id)}>Delete</button>
 
         </div>
     );
