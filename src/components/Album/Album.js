@@ -1,11 +1,8 @@
 
 
-const Todo = ({todo}) => {
+const Album = ({album}) => {
 
-    const{userId, id, title, completed} = todo;
-
-
-
+    const {userId, id, title} = album;
 
     return (
         <div style={{borderBottom:'2px solid cornflowerblue'}}>
@@ -13,10 +10,9 @@ const Todo = ({todo}) => {
             <p>User ID: {userId}</p>
             <p>ID: {id}</p>
             <h3>{title}</h3>
-            <p>Completion: {completed.toString()}</p>
 
         </div>
     );
 };
 
-export {Todo};
+export {Album};

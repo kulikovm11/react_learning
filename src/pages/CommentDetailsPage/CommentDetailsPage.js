@@ -1,10 +1,16 @@
-import React from 'react';
+import {CommentsDetails, Posts} from "../../components";
+import {useParams} from "react-router-dom";
+
 
 const CommentDetailsPage = () => {
+
+    const{postId} = useParams()
+
+
     return (
         <div>
 
-            CommentDetailsPage
+            <CommentsDetails postId={postId}/>
 
         </div>
     );

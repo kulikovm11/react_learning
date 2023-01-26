@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 
 
 const Comment = ({comment}) => {
@@ -13,6 +14,7 @@ const Comment = ({comment}) => {
             <h3>{name}</h3>
             <p>Mail: {email}</p>
             <p>{body}</p>
+            <Link to={postId.toString()}>Current post</Link>
 
         </div>
     );

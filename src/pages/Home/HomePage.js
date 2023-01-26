@@ -1,10 +1,12 @@
-import React from 'react';
+import css from './HomePage.module.css'
 
 const HomePage = () => {
     return (
-        <div>
+        <div className={css.Content}>
 
-            HomePage
+            <h2>Типа JSONPlaceholder</h2>
+
+
 
         </div>
     );

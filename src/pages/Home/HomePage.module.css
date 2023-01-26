@@ -1,0 +1,11 @@
+.Content{
+    min-height: 250px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Content h2{
+    color: snow;
+}

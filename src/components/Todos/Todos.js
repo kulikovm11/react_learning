@@ -13,7 +13,7 @@ const Todos = () => {
     return (
         <div>
 
-            {todos.map(todo=><Todo key={todo.key} todo={todo}/>)}
+            {todos.map(todo=><Todo key={todo.id} todo={todo}/>)}
 
         </div>
     );
