@@ -23,8 +23,11 @@ const CarForm = ({setCars, updateCar}) => {
             setCars(prev=>[...prev, data])
         }else{
 
-            await carService.updateById(updateCar.id, car)
-            setCars(prev=>[...prev, car])
+            const {data} = await carService.updateById(updateCar.id, car)
+            if(Object.keys(data).length){
+                const {data} = await carService.getAll()
+                setCars(data)
+            }
 
         }
 
