@@ -14,7 +14,7 @@ const Comment = ({comment}) => {
             <h3>{name}</h3>
             <p>Mail: {email}</p>
             <p>{body}</p>
-            <Link to={postId.toString()}>Current post</Link>
+            <Link to={postId.toString()} state={{...comment}}>Current post</Link>
 
         </div>
     );

@@ -6,5 +6,4 @@ export * from './Todo/Todo'
 export * from './Todos/Todos'
 export * from './Albums/Albums'
 export * from './Album/Album'
-export * from './Post/Post'
-export * from './Posts/Posts'
+
