@@ -1,4 +1,24 @@
-interface ISpaceX <DATA, DATA2>{
+
+interface IPay {
+
+
+                payload_type: string,
+                 payload_mass_kg: number,
+                 payload_mass_lbs: number
+
+
+}
+
+interface ICore {
+    flight:number;
+                core:{
+                    reuse_count:number;
+                    status: string;
+                 }
+}
+
+
+interface ISpaceX {
     mission_name: string;
 
     launch_date_local: string;
@@ -29,7 +49,7 @@ interface ISpaceX <DATA, DATA2>{
     rocket:{
         rocket_name: string;
         first_stage:{
-            cores:DATA2
+            cores:ICore[]
         }
 
     };
@@ -43,13 +63,13 @@ interface ISpaceX <DATA, DATA2>{
     // };
 
     second_stage:{
-        payloads:DATA
+        payloads:IPay[]
     };
 
 }
 
 
-const mission: ISpaceX <[{}], [{}]> = {
+const mission: ISpaceX = {
     mission_name: 'Starlink-15 (v1.0)',
     launch_date_local: '2020-10-24T11:31:00-04:00',
     launch_site: {site_name_long: 'Cape Canaveral Air Force Station Space Launch Complex 40'},
@@ -92,7 +112,7 @@ let sum:(a:number, b:number) => number;
 //     console.log(a + b);
 // }
 
-function showSum(a:number,b:number){
+function showSum(a:number,b:number): void {
     console.log(a + b);
 }
 
@@ -102,7 +122,7 @@ function showSum(a:number,b:number){
 //     return someUser
 // }
 
-function incAge(someUser:{age:number}, inc:number){
+function incAge(someUser:IUser, inc:number){
     someUser.age+=inc
     return someUser
 }
