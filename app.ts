@@ -122,7 +122,7 @@ function showSum(a:number,b:number): void {
 //     return someUser
 // }
 
-function incAge(someUser:IUser, inc:number){
+function incAge(someUser:IUser, inc:number):IUser{
     someUser.age+=inc
     return someUser
 }
